@@ -1,6 +1,40 @@
-<div class="bg-white pb-6 sm:pb-8 lg:pb-12">
-    <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
-      <header class="flex justify-between items-center py-4 md:py-8 mb-4">
+<mat-sidenav-container>
+
+  <mat-sidenav #sidenav class="sidenav-container">
+    <div fxLayout="column">
+    <button mat-button class="menu-button">
+      <span>Home</span>
+    </button>
+    <button mat-button class="menu-button">
+      <span>About Us</span>
+    </button>
+    <button mat-button class="menu-button" [matMenuTriggerFor]="belowMenu">Services</button>
+    <mat-menu #belowMenu="matMenu" yPosition="below">
+    <a href="#"><button mat-menu-item>Patent</button></a>
+    <a href="#"><button mat-menu-item>Trademarks</button></a>
+    <a href="#"><button mat-menu-item>Design</button></a>
+    <a href="#"><button mat-menu-item>Copyrights</button></a>
+    <a href="#"><button mat-menu-item>Geographical Indication</button></a>
+    <a href="#"><button mat-menu-item>IP Litigation</button></a>
+    <a href="#"><button mat-menu-item>IP Commercialization</button></a>
+    <a href="#"><button mat-menu-item>Cyber Law</button></a>
+    </mat-menu>
+
+    <button mat-button class="menu-button">
+      <span>Our Clients</span>
+    </button>
+    <button mat-button class="menu-button">
+      <span>Career</span>
+    </button>
+  </div>
+  </mat-sidenav>
+  <mat-sidenav-content fxFlexFill>
+
+
+
+<div class="fixed bg-white pb-4 sm:pb-6 lg:pb-6 w-full" id="myid2">
+    <div class="max-w-screen-2xl px-6 md:px-8 mx-auto">
+      <header class="flex justify-between items-center py-4 md:py-6 mb-0">
         <!-- logo - start -->
         <a href="/" class="inline-flex items-center text-black-800 text-2xl md:text-3xl font-bold gap-2.5" aria-label="logo">
         LawNetics
@@ -9,18 +43,28 @@
   
         <!-- nav - start -->
         <nav class="hidden lg:flex gap-12">
-          <a href="#" class="text-indigo-700 text-lg font-semibold">Home</a>
-          <a href="#" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">About Us</a>
-          <a href="#" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Services</a>
-          <a href="#" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Our Clients</a>
-          <a href="#" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Careers</a>
+          <a [routerLink]="['/home']" class="text-indigo-700 text-lg font-semibold">Home</a>
+          <a [routerLink]="['/about-us']" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">About Us</a>
+          <button mat-button class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100" [matMenuTriggerFor]="belowMenu">Services</button>
+    <mat-menu #belowMenu="matMenu" yPosition="below">
+    <a href="#"><button mat-menu-item>Patent</button></a>
+    <a href="#"><button mat-menu-item>Trademarks</button></a>
+    <a href="#"><button mat-menu-item>Design</button></a>
+    <a href="#"><button mat-menu-item>Copyrights</button></a>
+    <a href="#"><button mat-menu-item>Geographical Indication</button></a>
+    <a href="#"><button mat-menu-item>IP Litigation</button></a>
+    <a href="#"><button mat-menu-item>IP Commercialization</button></a>
+    <a href="#"><button mat-menu-item>Cyber Law</button></a>
+    </mat-menu>
+          <a [routerLink]="['/home']" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Our Clients</a>
+          <a [routerLink]="['/home']" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Careers</a>
         </nav>
         <!-- nav - end -->
   
         <!-- buttons - start -->
         <a href="#" class="hidden lg:inline-block bg-gray-200 hover:bg-blue-700 focus-visible:ring ring-indigo-300 text-black-700 active:text-gray-700 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Contact Us</a>
   
-        <button type="button" class="inline-flex items-center lg:hidden bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-indigo-300 text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2">
+        <button type="button" (click)="sidenav.toggle()" class="inline-flex items-center lg:hidden bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-indigo-300 text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
           </svg>
@@ -29,31 +73,38 @@
         </button>
         <!-- buttons - end -->
       </header>
-  
-      <section class="min-h-96 flex justify-center items-center flex-1 shrink-0 bg-gray-100 overflow-hidden shadow-lg rounded-lg relative py-16 md:py-20 xl:py-48">
-        <!-- image - start -->
-        <img src="https://images.unsplash.com/photo-1589216532372-1c2a367900d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" loading="lazy" alt="Photo by Fakurian Design" class="w-full h-full object-cover object-center absolute inset-0" />
-        <!-- image - end -->
-  
-        <!-- overlay - start -->
-        <div class="bg-indigo-500 mix-blend-multiply absolute inset-0"></div>
-        <!-- overlay - end -->
-        
-        <!-- text start -->
-        <div class="sm:max-w-xl flex flex-col items-center relative p-4">
-            
-          <!-- <p class="text-indigo-200 text-lg sm:text-xl text-center mb-4 md:mb-8">Very proud to introduce</p> -->
-          
-          <h1 class="text-white text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-8 md:mb-12">YOUR CREATION, YOUR RIGHTS</h1>
-  
-          <div class="w-full flex flex-col sm:flex-row sm:justify-center gap-2.5">
-            <a href="#" class="inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Learn More</a>
-          </div>
-        </div>
-        <!-- text end -->
-      </section>
     </div>
   </div>
+  
+
+
+  <div class="bg-white pb-6 sm:pb-8 lg:pb-12 w-full" id="myid">
+  <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+  <section class="min-h-96 flex justify-center items-center flex-1 shrink-0 bg-gray-100 overflow-hidden shadow-lg rounded-lg relative py-16 md:py-20 xl:py-48">
+    <!-- image - start -->
+    <img src="https://images.unsplash.com/photo-1589216532372-1c2a367900d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" loading="lazy" alt="Photo by Fakurian Design" class="w-full h-full object-cover object-center absolute inset-0" />
+    <!-- image - end -->
+
+    <!-- overlay - start -->
+    <div class="bg-indigo-500 mix-blend-multiply absolute inset-0"></div>
+    <!-- overlay - end -->
+    
+    <!-- text start -->
+    <div class="sm:max-w-xl flex flex-col items-center relative p-4">
+        
+      <!-- <p class="text-indigo-200 text-lg sm:text-xl text-center mb-4 md:mb-8">Very proud to introduce</p> -->
+      
+      <h1 class="text-white text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-8 md:mb-12">YOUR CREATION, YOUR RIGHTS</h1>
+
+      <div class="w-full flex flex-col sm:flex-row sm:justify-center gap-2.5">
+        <a href="#" class="inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Learn More</a>
+      </div>
+    </div>
+    <!-- text end -->
+  </section>
+  </div>
+  </div>
+  
 
   <div class="bg-white py-6 sm:py-8 lg:py-12">
     <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
@@ -198,7 +249,7 @@
             <p class="text-gray-500 text-sm md:text-base text-center mb-3 md:mb-4">A patent is an exclusive right granted for an invention, which is a product or a process that provides or offers a new technical solution to a problem.</p>
             <div class="flex justify-center">
               <div class="flex gap-4">
-                <button class="inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-100 px-8 py-2">Read More</button>
+                <button routerLink="/patent" class="inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-100 px-8 py-2">Read More</button>
               </div>
             </div>
           </div>
@@ -409,6 +460,11 @@
 
 
 
+
+
+
+
+
   <div class="bg-white py-6 sm:py-8 lg:py-12">
     <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
       <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-8">Our Clients</h2>
@@ -427,5 +483,5 @@
   </div>
 
 
-
- 
+</mat-sidenav-content>
+</mat-sidenav-container>

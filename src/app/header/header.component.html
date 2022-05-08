@@ -1,0 +1,69 @@
+<div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+<header class="flex justify-between items-center py-4 md:py-8 mb-4">
+    <!-- logo - start -->
+    <a href="/" class="inline-flex items-center text-black-800 text-2xl md:text-3xl font-bold gap-2.5" aria-label="logo">
+    LawNetics
+    </a>
+    <!-- logo - end -->
+
+    <!-- nav - start -->
+    <nav class="hidden lg:flex gap-12 text-lg font-bold antialiased">
+      <!-- <a href="#" class="text-indigo-700 text-lg font-semibold">Home</a>
+      <a href="#" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">About Us</a>
+      <a href="#" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Services</a>
+      <a href="#" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Our Clients</a>
+      <a href="#" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Careers</a> -->
+    <!-- </nav> -->
+    <!-- nav - end -->
+
+
+    <a href="#"><button mat-button>Home</button></a>
+    <a href="#"><button mat-button>About Us</button></a>
+    <button mat-button [matMenuTriggerFor]="belowMenu">Services</button>
+    <mat-menu #belowMenu="matMenu" yPosition="below">
+    <a href="#"><button mat-menu-item>Patent</button></a>
+    <a href="#"><button mat-menu-item>Trademarks</button></a>
+    <a href="#"><button mat-menu-item>Design</button></a>
+    <a href="#"><button mat-menu-item>Copyrights</button></a>
+    <a href="#"><button mat-menu-item>Geographical Indication</button></a>
+    <a href="#"><button mat-menu-item>IP Litigation</button></a>
+    <a href="#"><button mat-menu-item>IP Commercialization</button></a>
+    <a href="#"><button mat-menu-item>Cyber Law</button></a>
+    </mat-menu>
+
+    <a href="#"><button mat-button>Our Clients</button></a>
+    <a href="#"><button mat-button>Career</button></a>
+    </nav>
+
+    <!-- buttons - start -->
+    <a href="#" class="hidden lg:inline-block bg-gray-200 hover:bg-blue-700 focus-visible:ring ring-indigo-300 text-black-700 active:text-gray-700 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Contact Us</a>
+
+    <button type="button" (click)="sidenav.toggle()" class="inline-flex items-center lg:hidden bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-indigo-300 text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+      </svg>
+
+      Menu
+    </button>
+    <!-- buttons - end -->
+
+
+   
+  </header>
+  <mat-sidenav-container fxFlexFill class="example-container">
+    <mat-sidenav #sidenav fxLayout="column">
+      <div fxLayout="column">
+        <a (click)="sidenav.toggle()" href="#" mat-button>Close</a>
+        <a href="#" mat-button>Menu Item 1</a>
+        <a href="#" mat-button>Menu Item 2</a>
+        <a href="#" mat-button>Menu Item 3</a>
+        <a href="#" mat-button>Menu Item 4</a>
+        <a href="#" mat-button>Menu Item 5</a>
+        <a href="#" mat-button>Menu Item 6</a>
+      </div>
+    </mat-sidenav>
+  </mat-sidenav-container>
+
+
+  
+</div>

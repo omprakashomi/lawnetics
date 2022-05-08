@@ -15,6 +15,15 @@ import { IpCommercializationComponent } from './service/ip-commercialization/ip-
 import { CyberLawComponent } from './service/cyber-law/cyber-law.component';
 import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { RouterModule } from '@angular/router';
+import { AboutUsComponent } from './about-us/about-us.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
+
 
 @NgModule({
   declarations: [
@@ -29,12 +38,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     GeographicalIndicationComponent,
     IpCommercializationComponent,
     CyberLawComponent,
-    HeaderComponent
+    HeaderComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatMenuModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatIconModule,
+    RouterModule,
+    MatListModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
