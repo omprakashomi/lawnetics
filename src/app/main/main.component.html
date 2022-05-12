@@ -1,88 +1,9 @@
-<mat-sidenav-container>
-
-  <mat-sidenav #sidenav class="sidenav-container">
-    <div fxLayout="column">
-    <button mat-button class="menu-button">
-      <span>Home</span>
-    </button>
-    <button mat-button class="menu-button">
-      <span>About Us</span>
-    </button>
-    <button mat-button class="menu-button" [matMenuTriggerFor]="belowMenu">Services</button>
-    <mat-menu #belowMenu="matMenu" yPosition="below">
-    <a href="#"><button mat-menu-item>Patent</button></a>
-    <a href="#"><button mat-menu-item>Trademarks</button></a>
-    <a href="#"><button mat-menu-item>Design</button></a>
-    <a href="#"><button mat-menu-item>Copyrights</button></a>
-    <a href="#"><button mat-menu-item>Geographical Indication</button></a>
-    <a href="#"><button mat-menu-item>IP Litigation</button></a>
-    <a href="#"><button mat-menu-item>IP Commercialization</button></a>
-    <a href="#"><button mat-menu-item>Cyber Law</button></a>
-    </mat-menu>
-
-    <button mat-button class="menu-button">
-      <span>Our Clients</span>
-    </button>
-    <button mat-button class="menu-button">
-      <span>Career</span>
-    </button>
-  </div>
-  </mat-sidenav>
-  <mat-sidenav-content fxFlexFill>
-
-
-
-<div class="fixed bg-white pb-4 sm:pb-6 lg:pb-6 w-full" id="myid2">
-    <div class="max-w-screen-2xl px-6 md:px-8 mx-auto">
-      <header class="flex justify-between items-center py-4 md:py-6 mb-0">
-        <!-- logo - start -->
-        <a href="/" class="inline-flex items-center text-black-800 text-2xl md:text-3xl font-bold gap-2.5" aria-label="logo">
-        LawNetics
-        </a>
-        <!-- logo - end -->
-  
-        <!-- nav - start -->
-        <nav class="hidden lg:flex gap-12">
-          <a [routerLink]="['/home']" class="text-indigo-700 text-lg font-semibold">Home</a>
-          <a [routerLink]="['/about-us']" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">About Us</a>
-          <button mat-button class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100" [matMenuTriggerFor]="belowMenu">Services</button>
-    <mat-menu #belowMenu="matMenu" yPosition="below">
-    <a href="#"><button mat-menu-item>Patent</button></a>
-    <a href="#"><button mat-menu-item>Trademarks</button></a>
-    <a href="#"><button mat-menu-item>Design</button></a>
-    <a href="#"><button mat-menu-item>Copyrights</button></a>
-    <a href="#"><button mat-menu-item>Geographical Indication</button></a>
-    <a href="#"><button mat-menu-item>IP Litigation</button></a>
-    <a href="#"><button mat-menu-item>IP Commercialization</button></a>
-    <a href="#"><button mat-menu-item>Cyber Law</button></a>
-    </mat-menu>
-          <a [routerLink]="['/home']" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Our Clients</a>
-          <a [routerLink]="['/home']" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Careers</a>
-        </nav>
-        <!-- nav - end -->
-  
-        <!-- buttons - start -->
-        <a href="#" class="hidden lg:inline-block bg-gray-200 hover:bg-blue-700 focus-visible:ring ring-indigo-300 text-black-700 active:text-gray-700 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Contact Us</a>
-  
-        <button type="button" (click)="sidenav.toggle()" class="inline-flex items-center lg:hidden bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-indigo-300 text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-          </svg>
-  
-          Menu
-        </button>
-        <!-- buttons - end -->
-      </header>
-    </div>
-  </div>
-  
-
 
   <div class="bg-white pb-6 sm:pb-8 lg:pb-12 w-full" id="myid">
   <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
   <section class="min-h-96 flex justify-center items-center flex-1 shrink-0 bg-gray-100 overflow-hidden shadow-lg rounded-lg relative py-16 md:py-20 xl:py-48">
     <!-- image - start -->
-    <img src="https://images.unsplash.com/photo-1589216532372-1c2a367900d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" loading="lazy" alt="Photo by Fakurian Design" class="w-full h-full object-cover object-center absolute inset-0" />
+    <img src="https://images.unsplash.com/photo-1589216532372-1c2a367900d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" loading="lazy" alt="Photo by Fakurian Design" class="w-full h-full object-cover object-center absolute inset-0"/>
     <!-- image - end -->
 
     <!-- overlay - start -->
@@ -110,66 +31,6 @@
     <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
       <!-- text - start -->
       <div class="mb-10 md:mb-16">
-        <h2 class="text-gray-800 text-3xl lg:text-4xl font-bold text-center mb-4 md:mb-6">Why to ISO Certify?</h2>
-  
-        <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">Let you know why you need to ISO certified? What is the main benefit of being certified by ISO?</p>
-      </div>
-      <!-- text - end -->
-  
-      <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8">
-        <!-- feature - start -->
-        <div class="flex bg-gray-50 border rounded-lg divide-x">
-          <div class="flex items-center text-indigo-500 p-2 md:p-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 md:w-8 h-6 md:h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-          </div>
-  
-          <div class="p-4 md:p-6">
-            <h3 class="text-lg md:text-xl font-semibold mb-2">Global Recognition</h3>
-            <p class="text-gray-500">ISO is an independent, non-governmental international organization with a membership of 167 national standards bodies and develop market relevant standards.</p>
-          </div>
-        </div>
-        <!-- feature - end -->
-  
-        <!-- feature - start -->
-        <div class="flex bg-gray-50 border rounded-lg divide-x">
-          <div class="flex items-center text-indigo-500 p-2 md:p-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 md:w-8 h-6 md:h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-          </div>
-  
-          <div class="p-4 md:p-6">
-            <h3 class="text-lg md:text-xl font-semibold mb-2">Quality Assurance</h3>
-            <p class="text-gray-500">ISO bring together experts from all over the world to share knowledge and develop voluntary, consensus-based International Standards that support innovation and provide solutions to global challenges</p>
-          </div>
-        </div>
-        <!-- feature - end -->
-  
-        <!-- feature - start -->
-        <div class="flex bg-gray-50 border rounded-lg divide-x">
-          <div class="flex items-center text-indigo-500 p-2 md:p-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 md:w-8 h-6 md:h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-          </div>
-  
-          <div class="p-4 md:p-6">
-            <h3 class="text-lg md:text-xl font-semibold mb-2">More Standards Catalogue</h3>
-            <p class="text-gray-500">It's certifications exist in many areas like Quality management, Environmental Management, Information Security Management and Medical Devices . ISO standards are in place to ensure consistency. Each certification has separate standards and criterias.</p>
-          </div>
-        </div>
-        <!-- feature - end -->
-      </div>
-    </div>
-  </div>
-
-
-  <div class="bg-white py-6 sm:py-8 lg:py-12">
-    <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
-      <!-- text - start -->
-      <div class="mb-10 md:mb-16">
         <h2 class="text-gray-800 text-3xl lg:text-4xl font-bold text-center mb-4 md:mb-6">Why Certify from LawNetics?</h2>
   
         <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">
@@ -180,7 +41,7 @@
   
       <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-12 xl:gap-16">
         <!-- feature - start -->
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center hover:-translate-x-10 transition duration-300">
           <div class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center bg-indigo-500 text-white rounded-lg md:rounded-xl shadow-lg mb-6">
             <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/feature_6_Svg2.svg" alt="Customer">
           </div>
@@ -191,7 +52,7 @@
         <!-- feature - end -->
   
         <!-- feature - start -->
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center hover:translate-x-10 transition duration-300">
           <div class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center bg-indigo-500 text-white rounded-lg md:rounded-xl shadow-lg mb-6">
             <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/feature_7-svg6.svg" alt="">
           </div>
@@ -202,7 +63,7 @@
         <!-- feature - end -->
   
         <!-- feature - start -->
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center hover:-translate-x-10 transition duration-300">
           <div class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center bg-indigo-500 text-white rounded-lg md:rounded-xl shadow-lg mb-6">
             <img src="https://img.icons8.com/color-glass/48/000000/filled-sent.png"/>
           </div>
@@ -238,28 +99,11 @@
       <!-- text - end -->
   
       <div class="grid grid-cols-2 md:grid-cols-4 gap-x-4 lg:gap-x-8 gap-y-8 lg:gap-y-12">
+
         <!-- person - start -->
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center hover:scale-75 transition duration-300">
           <div class="w-24 md:w-32 h-24 md:h-32 bg-gray-100 rounded-full overflow-hidden shadow-lg mb-2 md:mb-4">
-            <img src="assets/images/bulb.png" loading="lazy" alt="Photo by Radu Florin" class="w-full h-full object-cover object-center" />
-          </div>
-  
-          <div>
-            <div class="text-indigo-500 md:text-lg font-bold text-center">PATENTS</div>
-            <p class="text-gray-500 text-sm md:text-base text-center mb-3 md:mb-4">A patent is an exclusive right granted for an invention, which is a product or a process that provides or offers a new technical solution to a problem.</p>
-            <div class="flex justify-center">
-              <div class="flex gap-4">
-                <button routerLink="/patent" class="inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-100 px-8 py-2">Read More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- person - end -->
-  
-        <!-- person - start -->
-        <div class="flex flex-col items-center">
-          <div class="w-24 md:w-32 h-24 md:h-32 bg-gray-100 rounded-full overflow-hidden shadow-lg mb-2 md:mb-4">
-            <img src="assets/images/badge.png" loading="lazy" alt="Photo by Radu Florin" class="w-full h-full object-cover object-center" />
+            <img src="assets/images/badge.png" loading="lazy" alt="Photo by Radu Florin" class="w-full h-full object-cover object-center hover:skew-y-12 transition duration-300" />
           </div>
   
           <div>
@@ -267,51 +111,16 @@
             <p class="text-gray-500 text-sm md:text-base text-center mb-3 md:mb-4">It is a type of intellectual property consisting of sign or design that identifies products or services from a source and distinguishes them.</p>
             <div class="flex justify-center">
               <div class="flex gap-4">
-                <button class="inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-100 px-8 py-2">Read More</button>
+                <button class="inline-block bg-indigo-600 hover:bg-indigo-900 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-200 px-8 py-2">Read More</button>
               </div>
             </div>
           </div>
         </div>
         <!-- person - end -->
-  
-        <!-- person - start -->
-        <div class="flex flex-col items-center">
-          <div class="w-24 md:w-32 h-24 md:h-32 bg-gray-100 rounded-full overflow-hidden shadow-lg mb-2 md:mb-4">
-            <img src="assets/images/pencil.png" loading="lazy" alt="Photo by Radu Florin" class="w-full h-full object-cover object-center" />
-          </div>
-  
-          <div>
-            <div class="text-indigo-500 md:text-lg font-bold text-center">DESIGN</div>
-            <p class="text-gray-500 text-sm md:text-base text-center mb-3 md:mb-4">A registered design protects the visual appearance of a product or item and gives you exclusive rights for that appearance to the extent.</p>
-            <div class="flex justify-center">
-              <div class="flex gap-4">
-                <button class="inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-100 px-8 py-2">Read More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- person - end -->
-  
-        <!-- person - start -->
-        <div class="flex flex-col items-center">
-          <div class="w-24 md:w-32 h-24 md:h-32 bg-gray-100 rounded-full overflow-hidden shadow-lg mb-2 md:mb-4">
-            <img src="assets/images/hammer.png" loading="lazy" alt="Photo by Radu Florin" class="w-full h-full object-cover object-center" />
-          </div>
-  
-          <div>
-            <div class="text-indigo-500 md:text-lg font-bold text-center">IP LITIGATION</div>
-            <p class="text-gray-500 text-sm md:text-base text-center mb-3 md:mb-4">IP Litigation enables the protection of intellectual innovations. These creations can be categorized into inventions, innovative designs or dramatic works.</p>
-            <div class="flex justify-center">
-              <div class="flex gap-4">
-                <button class="inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-100 px-8 py-2">Read More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- person - end -->
-  
-        <!-- person - start -->
-        <div class="flex flex-col items-center">
+
+
+         <!-- person - start -->
+         <div class="flex flex-col items-center hover:scale-75 transition duration-300">
           <div class="w-24 md:w-32 h-24 md:h-32 bg-gray-100 rounded-full overflow-hidden shadow-lg mb-2 md:mb-4">
             <img src="assets/images/papertray.png" loading="lazy" alt="Photo by Radu Florin" class="w-full h-full object-cover object-center" />
           </div>
@@ -321,15 +130,54 @@
             <p class="text-gray-500 text-sm md:text-base text-center mb-3 md:mb-4"> It is a term used to describe the rights that creators have over their artistic works. Works covered by copyright range from books, music and others.</p>
             <div class="flex justify-center">
               <div class="flex gap-4">
-                <button class="inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-100 px-8 py-2">Read More</button>
+                <button class="inline-block bg-indigo-600 hover:bg-indigo-900 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-200 px-8 py-2">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- person - end -->
+
+
+          <!-- person - start -->
+          <div class="flex flex-col items-center hover:scale-75 transition duration-300">
+            <div class="w-24 md:w-32 h-24 md:h-32 bg-gray-100 rounded-full overflow-hidden shadow-lg mb-2 md:mb-4">
+              <img src="assets/images/pencil.png" loading="lazy" alt="Photo by Radu Florin" class="w-full h-full object-cover object-center" />
+            </div>
+    
+            <div>
+              <div class="text-indigo-500 md:text-lg font-bold text-center">DESIGN</div>
+              <p class="text-gray-500 text-sm md:text-base text-center mb-3 md:mb-4">A registered design protects the visual appearance of a product or item and gives you exclusive rights for that appearance to the extent.</p>
+              <div class="flex justify-center">
+                <div class="flex gap-4">
+                  <button class="inline-block bg-indigo-600 hover:bg-indigo-900 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-200 px-8 py-2">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- person - end -->
+
+
+        <!-- person - start -->
+        <div class="flex flex-col items-center hover:scale-75 transition duration-300">
+          <div class="w-24 md:w-32 h-24 md:h-32 bg-gray-100 rounded-full overflow-hidden shadow-lg mb-2 md:mb-4">
+            <img src="assets/images/bulb.png" loading="lazy" alt="Photo by Radu Florin" class="w-full h-full object-cover object-center" />
+          </div>
+  
+          <div>
+            <div class="text-indigo-500 md:text-lg font-bold text-center">PATENTS</div>
+            <p class="text-gray-500 text-sm md:text-base text-center mb-3 md:mb-4">A patent is an exclusive right granted for an invention, which is a product or a process that provides or offers a new technical solution to a problem.</p>
+            <div class="flex justify-center">
+              <div class="flex gap-4">
+                <button routerLink="/patent" class="inline-block bg-indigo-600 hover:bg-indigo-900 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-200 px-8 py-2">Read More</button>
               </div>
             </div>
           </div>
         </div>
         <!-- person - end -->
   
-        <!-- person - start -->
-        <div class="flex flex-col items-center">
+        
+         <!-- person - start -->
+         <div class="flex flex-col items-center hover:scale-75 transition duration-300">
           <div class="w-24 md:w-32 h-24 md:h-32 bg-gray-100 rounded-full overflow-hidden shadow-lg mb-2 md:mb-4">
             <img src="assets/images/pin.png" loading="lazy" alt="Photo by Radu Florin" class="w-full h-full object-cover object-center" />
           </div>
@@ -339,15 +187,38 @@
             <p class="text-gray-500 text-sm md:text-base text-center mb-3 md:mb-4">GI is a sign used on products that have a specific geographical origin and possess qualities or a reputation that are due to that origin.</p>
             <div class="flex justify-center">
               <div class="flex gap-4">
-                <button class="inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-100 px-8 py-2">Read More</button>
+                <button class="inline-block bg-indigo-600 hover:bg-indigo-900 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-200 px-8 py-2">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- person - end -->
+      
+  
+        <!-- person - start -->
+        <div class="flex flex-col items-center hover:scale-75 transition duration-300">
+          <div class="w-24 md:w-32 h-24 md:h-32 bg-gray-100 rounded-full overflow-hidden shadow-lg mb-2 md:mb-4">
+            <img src="assets/images/hammer.png" loading="lazy" alt="Photo by Radu Florin" class="w-full h-full object-cover object-center" />
+          </div>
+  
+          <div>
+            <div class="text-indigo-500 md:text-lg font-bold text-center">IP LITIGATION</div>
+            <p class="text-gray-500 text-sm md:text-base text-center mb-3 md:mb-4">IP Litigation enables the protection of intellectual innovations. These creations can be categorized into inventions, innovative designs or dramatic works.</p>
+            <div class="flex justify-center">
+              <div class="flex gap-4">
+                <button class="inline-block bg-indigo-600 hover:bg-indigo-900 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-200 px-8 py-2">Read More</button>
               </div>
             </div>
           </div>
         </div>
         <!-- person - end -->
   
+       
+  
+       
+  
         <!-- person - start -->
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center hover:scale-75 transition duration-300">
           <div class="w-24 md:w-32 h-24 md:h-32 bg-gray-100 rounded-full overflow-hidden shadow-lg mb-2 md:mb-4">
             <img src="assets/images/clock.png" loading="lazy" alt="Photo by Radu Florin" class="w-full h-full object-cover object-center" />
           </div>
@@ -357,7 +228,7 @@
             <p class="text-gray-500 text-sm md:text-base text-center mb-3 md:mb-4">IP Commercialisation is the process of bringing the IPRs to the market in order for them to be exploited in return for business profits and growth.</p>
             <div class="flex justify-center">
               <div class="flex gap-4">
-                <button class="inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-100 px-8 py-2">Read More</button>
+                <button class="inline-block bg-indigo-600 hover:bg-indigo-900 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-200 px-8 py-2">Read More</button>
               </div>
             </div>
           </div>
@@ -365,7 +236,7 @@
         <!-- person - end -->
   
         <!-- person - start -->
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center hover:scale-75 transition duration-300">
           <div class="w-24 md:w-32 h-24 md:h-32 bg-gray-100 rounded-full overflow-hidden shadow-lg mb-2 md:mb-4">
             <img src="assets/images/spherespring.png" loading="lazy" alt="Photo by Radu Florin" class="w-full h-full object-cover object-center" />
           </div>
@@ -375,7 +246,7 @@
             <p class="text-gray-500 text-sm md:text-base text-center mb-3 md:mb-4">Cyberlaw is the area of law that deals with the Internet's relationship to technological and electronic elements, including computers and software.</p>
             <div class="flex justify-center">
               <div class="flex gap-4">
-                <button class="inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-100 px-8 py-2">Read More</button>
+                <button class="inline-block bg-indigo-600 hover:bg-indigo-900 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-200 px-8 py-2">Read More</button>
               </div>
             </div>
           </div>
@@ -391,76 +262,16 @@
 
 
 
-<div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
-    <div class="max-w-lg mx-auto">
-      <h1 class="text-2xl font-bold text-center text-indigo-600 sm:text-3xl">Send Enquiry</h1>
-  
-      <p class="max-w-md mx-auto mt-4 text-center text-gray-500">
-       Anything Stuck? Send your message. We will back to you soon.
-      </p>
-  
-      <form action="" class="p-8 mt-6 mb-0 space-y-4 rounded-lg shadow-2xl">
-        <div>
-          <label for="email" class="text-sm font-medium">Name</label>
-          <div class="relative mt-1">
-            <input
-              type="text"
-              id="name"
-              class="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
-              placeholder="Enter name"
-            />
-          </div>
-        </div>
+  <app-contact-us></app-contact-us>
 
 
-        <div>
-          <label for="email" class="text-sm font-medium">Email</label>
-  
-          <div class="relative mt-1">
-            <input
-              type="email"
-              id="email"
-              class="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
-              placeholder="Enter email"
-            />
-  
-            <span class="absolute inset-y-0 inline-flex items-center right-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5 text-gray-400"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
-                />
-              </svg>
-            </span>
-          </div>
-        </div>
-  
-        <div>
-          <label for="password" class="text-sm font-medium">Message</label>
-  
-          <div class="relative mt-1">
-            <textarea name="message" class="w-full p-8 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"></textarea>
-          </div>
-        </div>
-  
-        <button type="submit" class="block w-full px-5 py-3 text-sm font-medium text-white bg-indigo-600 rounded-lg">
-          Send
-        </button>
-      </form>
-    </div>
+
+  <div class="mb-10 md:mb-16 hover:scale-75 transition duration-300">
+    <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">24*7 Help Center</h2>
+    <a href="https://wa.me/message/TCMD4SC2563YG1">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="200px" height="200px" style="margin: 0  auto;"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+  </a>
   </div>
-
-
-
-
 
 
 
@@ -482,6 +293,5 @@
     </div>
   </div>
 
-
-</mat-sidenav-content>
-</mat-sidenav-container>
+<!-- </mat-sidenav-content>
+</mat-sidenav-container> -->

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 import { MainComponent } from './main/main.component';
 import { CopyrightComponent } from './service/copyright/copyright.component';
 import { CyberLawComponent } from './service/cyber-law/cyber-law.component';
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'ip-commercialization', component: IpCommercializationComponent},
   { path: 'home', component: MainComponent},
   { path: 'about-us', component: AboutUsComponent},
+  {path: 'contact', component: ContactUsComponent},
 ];
 
 @NgModule({

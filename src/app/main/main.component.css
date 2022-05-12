@@ -1,4 +1,4 @@
-.sidenav-container {
+/* .sidenav-container {
     width: 50%;
     border-right: none;
     background: white;
@@ -21,12 +21,12 @@
   margin: 0 -.25rem;
   /* transition: color .3s ease-in-out, box-shadow .3s ease-in-out; */
 
-}
+/* }
 
 .menu-button:hover {
   color: #fff;
   box-shadow: inset 200px 0 0 0 #0037ff;
-}
+}  */
 
 #myid{
   padding-top: 130px;
