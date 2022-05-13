@@ -2,22 +2,22 @@
 
   <mat-sidenav #sidenav class="sidenav-container">
     <div fxLayout="column">
-    <button mat-button class="menu-button">
+    <button mat-button class="menu-button" [routerLink]="['/home']" (click)="sidenav.close()">
       <span>Home</span>
     </button>
-    <button mat-button class="menu-button">
+    <button mat-button class="menu-button" [routerLink]="['/about-us']" (click)="sidenav.close()">
       <span>About Us</span>
     </button>
     <button mat-button class="menu-button" [matMenuTriggerFor]="belowMenu">Services</button>
     <mat-menu #belowMenu="matMenu" yPosition="below">
-      <a [routerLink]="['/trademark']"><button mat-menu-item>Trademarks</button></a>
-      <a [routerLink]="['/copyright']"><button mat-menu-item>Copyrights</button></a>
-      <a [routerLink]="['/design']"><button mat-menu-item>Design</button></a>
-      <a [routerLink]="['/patent']"><button mat-menu-item>Patent</button></a>
-      <a [routerLink]="['/geographical-indication']"><button mat-menu-item>Geographical Indication</button></a>
-      <a [routerLink]="['/ip-litigation']"><button mat-menu-item>IP Litigation</button></a>
-      <a [routerLink]="['/ip-commercialization']"><button mat-menu-item>IP Commercialization</button></a>
-      <a [routerLink]="['/cyber-law']"><button mat-menu-item>Cyber Law</button></a>
+      <a [routerLink]="['/trademark']" (click)="sidenav.close()"><button mat-menu-item>Trademarks</button></a>
+      <a [routerLink]="['/copyright']" (click)="sidenav.close()"><button mat-menu-item>Copyrights</button></a>
+      <a [routerLink]="['/design']" (click)="sidenav.close()"><button mat-menu-item>Design</button></a>
+      <a [routerLink]="['/patent']" (click)="sidenav.close()"><button mat-menu-item>Patent</button></a>
+      <a [routerLink]="['/geographical-indication']" (click)="sidenav.close()"><button mat-menu-item>Geographical Indication</button></a>
+      <a [routerLink]="['/ip-litigation']" (click)="sidenav.close()"><button mat-menu-item>IP Litigation</button></a>
+      <a [routerLink]="['/ip-commercialization']" (click)="sidenav.close()"><button mat-menu-item>IP Commercialization</button></a>
+      <a [routerLink]="['/cyber-law']" (click)="sidenav.close()"><button mat-menu-item>Cyber Law</button></a>
     </mat-menu>
 
     <button mat-button class="menu-button">
