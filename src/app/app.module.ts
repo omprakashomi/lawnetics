@@ -23,6 +23,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
+// import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { TermsOfServicesComponent } from './terms-of-services/terms-of-services.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
@@ -41,7 +44,9 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     CyberLawComponent,
     HeaderComponent,
     AboutUsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    PrivacyPolicyComponent,
+    TermsOfServicesComponent
   ],
   imports: [
     BrowserModule,
